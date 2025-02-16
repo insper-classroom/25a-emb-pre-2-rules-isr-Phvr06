@@ -26,6 +26,7 @@ void btn_callback(void) {
 
 void main(void) {
   // ...
+  
 
   batata = batata + 1;
   while (1) {
