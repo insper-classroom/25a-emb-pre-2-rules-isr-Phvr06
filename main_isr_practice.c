@@ -6,7 +6,6 @@
 // ERRO: cppcheck unitvar
 // ERRO: addon IsrVarVolatile
 volatile int btn_flag = 0;
-volatile int capture_flag = 0;
 
 
 void btn_callback(uint gpio, uint32_t events) {
@@ -37,11 +36,7 @@ int main() {
   int a;
   while (1) {
     if (btn_flag) {
-      capture_flag = 1;
       btn_flag = 0;
-    }
-
-    if (capture_flag) {
     }
     
   }
